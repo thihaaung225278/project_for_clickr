@@ -1,0 +1,520 @@
+
+/*
+* ==========================================
+* Some needed 
+* =========================================
+*/
+body{
+    font-family: 'EBGaramond-Regular', sans-serif;
+}
+.scroll-slide-mobile{
+    display: none;
+}
+
+/*
+* ==========================================
+* header
+* ==========================================
+*/
+
+/*navbar*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+.navbar .navbar-brand .logo {
+    width:80px;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/*
+* ==========================================
+* banner section
+* ==========================================
+*/
+.banner-section-wrapper{
+    position: relative;
+    min-height: 100vh;
+}
+.banner-image{
+    position: absolute;
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.banner-text{
+    width:600px;
+    background:rgba(23, 63, 53, 0.8);
+    padding:40px 80px;
+    color:#fff;
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+/*banner text transition*/
+.banner-text .heading{
+    animation: Slide_Up 0.5s ease-out;
+}
+.banner-text .text{
+    animation: Slide_Up 0.9s ease-out;
+}
+@keyframes Slide_Up{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*
+* ==========================================
+* what we do best section
+* ==========================================
+*/
+
+.what-we-do {
+    background-color: #00aec7;
+    padding: 7rem 0;
+    text-align: left;
+  }
+  .what-we-do h4{
+    color:#fff;
+  }
+  .inner-what-we-do {
+    width: 600px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .inner-what-we-do h2 {
+    color: #173f35;
+  }
+  .inner-what-we-do p {
+    color: #173f35;
+  }
+  .link-italics {
+    font-family: 'EBGaramond-Italic', sans-serif;
+    color: #fff;
+  }
+  .link-italics:hover{
+    color:#fff;
+    text-decoration: none;
+  }
+
+/*
+* ==========================================
+* scroll slide section
+* ==========================================
+*/
+.circle {
+    width: 21px;
+    height: 21px;
+    background: #00aec7;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+.about-title{
+    color:#173f35;
+}
+.about-content-title {
+    color: #00aec7;
+    margin-bottom: 3rem;
+}
+.about-content {
+    padding: 50px 50px 50px 90px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #fff;
+    width: 450px;
+    text-align: left;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .section-ourTeam {
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  .section-test {
+    height: 100%;
+    width: calc(100% / 3);
+    float: left;
+    position: relative;
+  }
+  .sections {
+    width: 300%;
+    height: 100%;
+  }
+  .section__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+  }
+  #scrollBg1 {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*
+* ==========================================
+* data security section
+* ==========================================
+*/
+.data-security {
+    /*min-height: auto;*/
+    background-color: #173f35;
+    padding: 80px 0;
+    text-align: left;
+  }
+  .data-security h2 {
+    color: #fff;
+  }
+  .data-security p {
+    color: #fff;
+    width: 85%;
+  }
+
+/*
+* ==========================================
+* latest post section
+* ==========================================
+*/
+  .home-latest-post .latest-post {
+    min-height: 100vh;
+  }
+  .latest-post {
+    min-height: auto;
+    padding: 70px 0;
+  }
+  .latest-post .link-italics {
+    color: #173f35 !important;
+  }
+  .latest-post .card {
+    border: 0;
+    width: 47%;
+  }
+  .latest-post .card .item {
+    width: 100%;
+    height: 390px;
+  }
+
+  .cardStrong {
+    font-family: 'EBGaramond-Bold', sans-serif;
+    color: var(--color-lightbg);
+    font-size: 15px;
+  }
+
+/*
+* ==========================================
+* two flex box with hover 
+* ==========================================
+*/
+.aboutus {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.aboutus_col_left {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.aboutus_col_right {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.aboutus_page_wrap {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.aboutus_page_wrap p {
+    position: absolute;
+    top: 67%;
+    margin-top: -67px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color:#fff;
+}
+.hoverColorBg {
+    background-color: #797a7c;
+}
+.aboutus__page {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+    text-align: center;
+    min-height: 379px;
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+.aboutus_page_wrap .link-title {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.link-title {
+    font-size: 2rem;
+    color: #fff;
+}
+#hover-left:hover
+    {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/about-us-one.jpg);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform:scale(1);
+  }
+#hover-right:hover{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/about-us-two.jpg);
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform:scale(1);
+}
+
+
+/*
+* ==========================================
+* quote section
+* ==========================================
+*/
+.quote {
+    background: #00aec7;
+    padding: 75px 0px;
+    text-align: center;
+}
+.quote h2 {
+    color: #fff;
+}
+.quote a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/*
+* ==========================================
+* media query
+* ==========================================
+*/
+@media screen and (max-width: 600px) {
+
+    /*banner section*/
+    .banner-text{
+        width:100%;
+        padding:40px 30px;
+    }
+    .banner-text h1{
+        font-size: 33px;
+    }
+    .banner-text p{
+        font-size: 16px;
+    }
+
+    /*what we do section*/
+    .what-we-do{
+        padding:7rem 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /*what we do section*/
+    .inner-what-we-do h2{
+        font-size:24px;
+    }
+    .what-we-do {
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+    .what-we-do-best-title{
+        font-size:16px;
+    }
+    /*data security section*/
+    .data-security{
+        padding:80px 40px;
+    }
+    .data-security h2{
+        font-size: 24px;
+    }
+    .data-security p{
+        width:100%;
+    }
+    .scroll-slide-mobile .about-content-title{
+        font-size:16px;
+    }
+    .scroll-slide-mobile .about-title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    /*slide scroll section*/
+    .scroll-slide-desktop{
+        display:none!important;
+    }
+    .scroll-slide-mobile{
+        display: block;
+        padding:50px 0;
+    }
+    .mobile-card{
+        border:none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .home-latest-post .latest-post-Web{
+        display:none!important;
+    }
+    .latest-post-slider {
+        display: block;
+        padding: 2.5rem 0 1rem;
+    }
+    .latest-post-slider h2{
+        font-size: 24px;
+    }
+    .latest-post-slider .headLink .link-italics{
+        color:#173f35;
+    }
+    .latest-post-slider .headLink {
+        padding: 0px 40px 30px;
+    }
+    .slide {
+        position: relative;
+        overflow: hidden;
+    }
+    .latest-post-slider .carousel-control-prev {
+        left: -11px;
+        top: -200px;
+    }
+    .latest-post-slider .carousel-control-prev-icon {
+        background-image: url(https://www.lexallo.com/wp/wp-content/themes/lexallo/assets/images/iconfinder_icon-ios7-arrow-left_211689.svg);
+    }
+    .latest-post-slider .carousel-control-next {
+        right: -11px;
+        top: -200px;
+    }
+    .latest-post-slider .carousel-inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .latest-post-slider .carousel-control-next {
+        right: -11px;
+        top: -200px;
+    }
+    .latest-post-slider .carousel-control-next-icon {
+        background-image: url(https://www.lexallo.com/wp/wp-content/themes/lexallo/assets/images/iconfinder_icon-ios7-arrow-right_211607.svg);
+    }
+    .latest-post .sm-flex-col {
+       -ms-flex-direction: column !important;
+       flex-direction: column !important;
+    }
+    .latest-post .sm-flex-col .card {
+       width: 100%;
+    }
+    .latest-post-slider .card .item {
+       height: 178px;
+    }
+    .latest-post .card .item {
+       height: 178px;
+    }
+    .latest-post-slider .card .item {
+       height: 178px;
+    }
+    .latest-post-slider .card-body{
+        padding:10px 0;
+    }
+    .latest-post-slider .card-title{
+        color:#173f35;
+        font-size: 24px;
+    }
+    .latest-post-slider .card-text{
+        font-size:16px;
+    }
+
+    /*aboutus section*/
+    .aboutus .d-flex {
+        display: block!important;
+    }
+    .aboutus .aboutus_col_left{
+        width:100%;
+    }
+    .aboutus .aboutus_col_right{
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 991px){
+    .home-latest-post .latest-post-slider{
+        display:none!important;
+    }
+}
+
