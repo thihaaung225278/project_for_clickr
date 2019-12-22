@@ -60,6 +60,200 @@ body{
     color: #555;
 }
 
+/*hamburger menu*/
+#navigation{
+    padding: 0;
+}
+#nav-toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 32px;
+  cursor: pointer;
+}
+#nav-toggle > div {
+  position: relative;
+  width: 36px;
+}
+#nav-toggle span {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  display: block;
+  background: #fff;
+  position: absolute;
+  transition: top 0.5s ease, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, top 0.5s ease;
+  transition: transform 0.3s ease-in-out, top 0.5s ease, -webkit-transform 0.3s ease-in-out;
+  /* #nav-toggle close */
+}
+#nav-toggle span:nth-child(1) {
+  top: 0;
+}
+#nav-toggle span:nth-child(2) {
+  top: 14px;
+}
+#nav-toggle span:nth-child(3) {
+  top: 28px;
+}
+#nav-toggle:hover span:nth-child(1) {
+  top: 4px;
+}
+#nav-toggle:hover span:nth-child(3) {
+  top: 23px;
+}
+
+.open #nav-toggle span:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.open #nav-toggle span:nth-child(2) {
+  top: 15px;
+  width: 0;
+  left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* z-index */
+#nav-toggle {
+  z-index: 1000;
+}
+
+#container {
+  z-index: 900;
+}
+
+#gloval-nav nav {
+  z-index: 999;
+}
+
+#gloval-nav {
+  background: #173f35;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 29px;
+  padding-left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.open #gloval-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#gloval-nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.6s ease;
+}
+#gloval-nav ul {
+  list-style: none;
+  text-align: center;
+}
+#gloval-nav ul li {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  transition: -webkit-transform 1.3s ease;
+  transition: transform 1.3s ease;
+  transition: transform 1.3s ease, -webkit-transform 1.3s ease;
+  position: relative;
+}
+/*#gloval-nav ul li a:after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 2px;
+  background: #000;
+  left: -100px;
+  position: absolute;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+#gloval-nav ul li a:hover:after {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}*/
+
+
+#gloval-nav ul li a:hover{
+    text-decoration: underline;
+}
+/*#gloval-nav ul li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+#gloval-nav ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+#gloval-nav ul li:nth-child(4) {
+  transition-delay: 0.45s;
+}
+#gloval-nav ul li:nth-child(5) {
+  transition-delay: 0.6s;
+}
+#gloval-nav ul li:nth-child(6) {
+  transition-delay: 0.75s;
+}
+#gloval-nav ul li:nth-child(7) {
+  transition-delay: 0.9s;
+}*/
+
+.open #gloval-nav li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav-bg {
+  opacity: 0;
+  background-image: linear-gradient(-45deg, #ff00bf, #ffea00);
+  /*position: fixed;*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 1s ease;
+}
+.nav-bg.active {
+  opacity: 1;
+}
+.nav-bg.news {
+  background-image: linear-gradient(-45deg, #4400ff, #ffea00);
+}
+.nav-bgabout {
+  background-image: linear-gradient(-45deg, #00ffcc, #ffea00);
+}
+.nav-bg.works {
+  background-image: linear-gradient(-45deg, #eb1405, #ffea00);
+}
+.nav-bg.contact {
+  background-image: linear-gradient(-45deg, #8b05eb, #ffea00);
+}
+
+
+
 
 /*
 * ==========================================
@@ -518,3 +712,4 @@ body{
     }
 }
 
+s
