@@ -416,6 +416,17 @@ body{
     height: 100%;
   }
 
+ 
+  .scroll-slide-desktop .slide-one{
+    background: url('img/slide-one.jpg') no-repeat center center;
+  }
+  .scroll-slide-desktop .slide-two{
+    background: url('img/slide-two.jpg') no-repeat center center;
+  }
+  .scroll-slide-desktop .slide-three{
+    background: url('img/slide-three.jpg') no-repeat center center;
+  }
+
 
 /*
 * ==========================================
@@ -465,6 +476,38 @@ body{
     color: var(--color-lightbg);
     font-size: 15px;
   }
+
+  .home-latest-post .latest-post .photo-one{
+    background:url('img/latest-post-photo-one.jpg'); 
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .home-latest-post .latest-post .photo-two{
+    background:url(img/latest-post-photo-two.jpg); 
+    background-size: cover; 
+    background-position: center
+  }
+  
+  .home-latest-post .latest-post .latest-post-title-one,.latest-post-title-two{
+    color:#173f35;
+    text-decoration: none;
+  }
+  .home-latest-post .latest-post .latest-post-text-one,.latest-post-text-two{
+    color:#173f35;
+  }
+
+  .home-latest-post .latest-post-slider .photo-one{
+    background:url(img/latest-post-photo-one.jpg); 
+    background-size: cover; 
+    background-position: center
+  }
+  .home-latest-post .latest-post-slider .photo-two{
+    background:url(img/latest-post-photo-two.jpg); 
+    background-size: cover; 
+    background-position: center
+  }
+  
 
 /*
 * ==========================================
@@ -569,7 +612,7 @@ body{
 .footer{
     background: #000;
     padding: 50px 0px 20px 0px;
-}
+}   
 .footer .footer-menu a{
     font-size: 15px;
     color:#fff;
