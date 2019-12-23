@@ -64,6 +64,13 @@ body{
 #navigation{
     padding: 0;
 }
+#navigation .big-menu-text-first{
+    font-size: 36px;
+}
+#navigation .big-menu-text-second{
+    margin-bottom: 3rem;
+    font-size: 36px 
+}
 #nav-toggle {
   position: fixed;
   top: 25px;
@@ -554,6 +561,64 @@ body{
     text-decoration: none;
 }
 
+/*
+* ==========================================
+* footer section
+* ==========================================
+*/
+.footer{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+}
+.footer .footer-menu a{
+    font-size: 15px;
+    color:#fff;
+    text-decoration: none;
+}
+.footer .footer-mail{
+    position: absolute;
+    bottom:0;
+}
+.footer .footer-mail a{
+    text-decoration: none;
+    color:#fff;
+}
+.footer .subscribe-newsletter{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer input[type="text"]{
+    background:#000;
+    border-radius:0;
+}
+.footer .for-subscribe-group{
+    margin-bottom: 30px;
+    width:80%;
+}
+.footer .social{
+    color:#fff;
+    font-size:15px;
+}
+.footer .copyright{
+    margin-top:30px;
+    color: #939598;
+    font-size: 12px;
+}
+
+/*
+* ==========================================
+* Talk to us
+* ==========================================
+*/
+
+.talk-to-us{
+    background:#000;
+    color:#fff;
+    padding:10px 20px;
+    position: fixed;
+    right:0;top:25%
+}
 
 /*
 * ==========================================
@@ -607,6 +672,19 @@ body{
     }
     .scroll-slide-mobile .about-title{
         font-size: 24px;
+    }
+
+    /*footer section*/
+    .footer .footer-mail{
+        position:inherit;
+    }
+    .footer .footer-menu, .footer-address, .footer-social{
+        border-bottom: 2px solid #fff;
+        padding-bottom: 20px;
+        margin-bottom:  20px;
+    }
+    .footer .copyright{
+        margin-top:0;
     }
 }
 

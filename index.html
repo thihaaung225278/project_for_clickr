@@ -60,8 +60,8 @@
                       
 
                         <ul id="navigation">
-                          <li><a href="#" style="font-size: 36px ">What we do best</a></li>
-                          <li><a href="#" style="margin-bottom: 3rem;font-size: 36px ">Who we are</a></li>
+                          <li><a href="#" class="big-menu-text-first">What we do best</a></li>
+                          <li><a href="#" class="big-menu-text-second">Who we are</a></li>
                           <li><a href="#" style="font-size: 18px;">Home</a></li>
                           <li><a href="#" style="font-size: 18px;">Blog</a></li>
                           <li><a href="#" style="font-size: 18px;">Client Portal</a></li>
@@ -470,9 +470,9 @@
                   <div class="d-inline link-title">
                     Who we are
                     <img class="align-middle d-inline ml-1 jetpack-lazy-image jetpack-lazy-image--handled" src="img/right-arrow.png" data-recalc-dims="1" data-lazy-loaded="1">
-                    <noscript>
+                    <!-- <noscript>
                       <img class="align-middle d-inline ml-1" src="https://i1.wp.com/lexallo.com/wp/wp-content/themes/lexallo/assets/images/right-arrow-white.png?w=640" data-recalc-dims="1">
-                    </noscript>
+                    </noscript> -->
                   </div>
                   <p>Discover what sets us apart.</p>
                 </a>
@@ -509,6 +509,7 @@
       </section>
       <!-- end about us -->
 
+      <!-- Let’s go places together section-->
       <section class="quote">
         <div>
           <h2 class="mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-offset="-10" data-aos-easing="ease-out-cubic">
@@ -518,57 +519,65 @@
             <a href="#">
               Excited for business to break boundaries? We are. 
               <img class="d-inline ml-1 align-middle jetpack-lazy-image jetpack-lazy-image--handled" src="img/right-arrow-white.png" data-recalc-dims="1" data-lazy-loaded="1">
-              <noscript>
+              <!-- <noscript>
                 <img class="d-inline ml-1 align-middle" src="https://i1.wp.com/lexallo.com/wp/wp-content/themes/lexallo/assets/images/right-arrow.png?w=640" data-recalc-dims="1" />
-              </noscript> 
+              </noscript>  -->
             </a>
           </p>
         </div>
       </section>
+      <!-- Let’s go places together section-->
 
       <!-- Footer -->
-      <section class="footer" style="background: #000;padding: 50px 0px 20px 0px;">
+      <section class="footer" style="">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <a href="#">Home</a><br>
-              <a href="#">Beliefs</a><br>
-              <a href="#">Our Team</a><br>
-              <a href="#">Expertise</a><br>
-              <a href="#">Process</a><br>
-              <a href="#">Blog</a><br>
-              <a href="#">Client Portal</a><br>
-              <a href="#">Contact</a><br>
-              <a href="#">Privacy Policy</a><br>
-            </div>
-            <div class="col-md-4" style="position: relative;">
-              <p class="address" style="font-size: 15px;color: #fff;">
-                11 Beach Road <br>
-                Level 3, Unit 1 <br>
-                Singapore 189675
-              </p>
-              <p style="position: absolute;bottom:0">
-                <a href="mailto:hello@lexallo.com">hello@lexallo.com</a>
-              </p>
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefaultUsername">Username</label>
-              <div class="input-group">
-                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-                <div class="input-group-prepend">
-                  <button class="input-group-text" id="inputGroupPrepend2">Submit</button>
-                </div>
+              <div class="footer-menu" data-aos="fade-up" data-aos-offset="0" data-aos-easing="ease-out-cubic">
+                <a href="#">Home</a><br>
+                <a href="#">Beliefs</a><br>
+                <a href="#">Our Team</a><br>
+                <a href="#">Expertise</a><br>
+                <a href="#">Process</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">Client Portal</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Privacy Policy</a><br>
               </div>
+            </div>
 
-              <a href="#">Facebook</a><br>
-              <a href="#">Twitter</a><br>
-              <a href="#">LinkedIn</a><br>
+            <div class="col-md-4" data-aos="fade-up" data-aos-offset="0" data-aos-easing="ease-out-cubic" style="position: relative;">
+              <div class="footer-address">
+                <p class="address" style="font-size: 15px;color: #fff;">
+                  11 Beach Road <br>
+                  Level 3, Unit 1 <br>
+                  Singapore 189675
+                </p>
+                <p class="footer-mail">
+                  <a href="mailto:hello@lexallo.com">hello@lexallo.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-offset="0" data-aos-easing="ease-out-cubic">
+              <div class="footer-social">
+                <label for="validationDefaultUsername" class="subscribe-newsletter">Subscribe to our newsletter</label>
+                <div class="input-group for-subscribe-group">
+                  <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                  <div class="input-group-prepend">
+                    <button class="input-group-text" id="inputGroupPrepend2">Submit</button>
+                  </div>
+                </div>
 
+                <a href="#" class="social">Facebook</a><br>
+                <a href="#" class="social">Twitter</a><br>
+                <a href="#" class="social">LinkedIn</a><br>
+              
+              </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" >
             <div class="col-md-12">
-              <p class="copyright" style="margin-top:30px;color: #939598;font-size: 12px;">
+              <p class="copyright">
                 Copyright © Lexallo. All rights reserved 2019
               </p>
             </div>
@@ -577,29 +586,8 @@
       </section>
       <!-- Footer -->
 
-      <div style="background:#000;color:#fff;padding:10px 20px;position: fixed;right:0;top:25%">Talk to us</div>
-
-      <!-- For demo purpose -->
-      <!-- <div class="container">
-          <div class="pt-5 text-white">
-              <header class="py-5 mt-5">
-                  <h1 class="display-4">Transparent Navbar</h1>
-                  <p class="lead mb-0">Using Bootstrap 4 and Javascript, create a transparent navbar which changes its style on scroll.</p>
-                  <p class="lead mb-0">Snippet by
-                      <a href="https://bootstrapious.com" class="text-white">
-                          <u>Bootstrapious</u></a>
-                  </p>
-              </header>
-              <div class="py-5">
-                  <p class="lead">Lorem ipsum dolor sit amet, <strong class="font-weight-bold">consectetur adipisicing </strong>elit. Explicabo consectetur odio voluptatum facere animi temporibus, distinctio tempore enim corporis quam <strong class="font-weight-bold">recusandae </strong>placeat! Voluptatum voluptate, ex modi illum quas nam distinctio.</p>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              <div class="py-5">
-                  <p class="lead">Lorem ipsum dolor sit amet, <strong class="font-weight-bold">consectetur adipisicing </strong>elit. Explicabo consectetur odio voluptatum facere animi temporibus, distinctio tempore enim corporis quam <strong class="font-weight-bold">recusandae </strong>placeat! Voluptatum voluptate, ex modi illum quas nam distinctio.</p>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-          </div>
-      </div> -->
+      <div class="talk-to-us">Talk to us</div>
+    
 
     <!-- end-navbar -->
 
