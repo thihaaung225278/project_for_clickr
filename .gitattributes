@@ -1,1 +1,1 @@
-linguist-vendored=assets/css
+*.js linguist-vendored=assets/css
